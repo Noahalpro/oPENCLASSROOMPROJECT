@@ -3,6 +3,50 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.logo-header {
+    width: 100px;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+li {
+    position: relative; /* Nécessaire pour positionner la barre */
+    display: inline-block; /* S'assurer que la barre s'applique correctement */
+}
+
+li::before {
+    content: ""; /* Contenu vide pour la barre */
+    position: absolute;
+    top: -20px; /* Distance entre le texte et la barre */
+    left: 0;
+    width: 0; /* La barre est cachée par défaut */
+    height: 2px; /* Épaisseur de la barre */
+    background-color: rgb(4, 0, 255); /* Couleur de la barre */
+    transition: width 0.3s ease; /* Animation fluide */
+  }
+
+li:hover::before {
+    width: 100%; /* La barre s'étend sur toute la largeur */
+  }
+
+li:hover {
+    color: rgb(4, 0, 255);
+}
+
+ul {
+    list-style-type: none; /* Supprime les puces */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
