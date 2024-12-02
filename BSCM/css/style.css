@@ -3,6 +3,37 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.BR {
+    padding: auto;
+    margin-left: 10px;
+    color: #DEEBFF;
+    font-weight: bold   ;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 50px;
+    font-weight: bold;
+    border-color: #F2F2F2
+}
+.iconerecherche {
+    content: "\f041";
+    font-family: "Font Awesome 5 Free"; /* Police de Font Awesome */
+    font-weight: 900; /* S'assurer que l'icône est en gras */
+    font-size: 40px;  /* Taille de l'icône */
+    color: #ff5733; /* Couleur de l'icône (ex. rouge) */
+}
+
+.boutonrecherche {
+    width: 150px;
+    border-top-right-radius: 15px 18px;
+    border-bottom-right-radius: 15px 18px;
+    height: max-content;
+    background-color: rgb(4, 0, 255);
+}
+
 .logo-header {
     width: 100px;
     padding: 10px;
