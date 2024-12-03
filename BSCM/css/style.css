@@ -3,35 +3,60 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.fa-location-dot {
+    font-size: 25px;  /* Taille de l'icône */
+    color: black !important;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+input {
+    height: 50px;
+    border-radius: none;
+    border-color: #F2F2F2;
+    border-width: 2px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
 .BR {
-    padding: auto;
-    margin-left: 10px;
-    color: #DEEBFF;
-    font-weight: bold   ;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: auto;
 }
 
 form {
     display: flex;
+    justify-content: left;
     flex-direction: row;
-    margin: auto;
-    height: 50px;
+    margin-bottom: 20px;
+    height: fit-content;
     font-weight: bold;
     border-color: #F2F2F2
 }
-.iconerecherche {
-    content: "\f041";
-    font-family: "Font Awesome 5 Free"; /* Police de Font Awesome */
-    font-weight: 900; /* S'assurer que l'icône est en gras */
-    font-size: 40px;  /* Taille de l'icône */
-    color: #ff5733; /* Couleur de l'icône (ex. rouge) */
+
+.locationsection {
+    position: relative;
 }
 
+.backgroundlocation {
+    width: 55px;
+    border-top-left-radius: 15px 18px;
+    border-bottom-left-radius: 15px 18px;
+    background-color: #F2F2F2;
+}
+
+
 .boutonrecherche {
+    display: flex;
+    justify-content: center;
     width: 150px;
     border-top-right-radius: 15px 18px;
     border-bottom-right-radius: 15px 18px;
-    height: max-content;
-    background-color: rgb(4, 0, 255);
+    background-color: var(--main-color)
 }
 
 .logo-header {
