@@ -3,6 +3,8 @@
     font-family: 'Raleway', sans-serif;
 }
 
+/* ---- FILTRE ----- */
+
 .partiefiltre {
     display: flex;
     flex-direction: row;
@@ -10,6 +12,7 @@
     padding: 20px;
     height: fit-content;
     width: fit-content;
+    align-items: center;
 }
 
 .Filtres {
@@ -28,6 +31,8 @@
     background-color: #c7ddff;
 }
 
+/* ----- BARRE RECHERCHE ----- */
+
 .fa-location-dot {
     font-size: 20px;  /* Taille de l'icône */
     color: black !important;
@@ -36,11 +41,10 @@
 }
 
 input {
-    border-radius: none;
-    border-color: #F2F2F2;
-    border-width: 2px;
+    border: 1px solid #F2F2F2;
     font-weight: bold;
     padding-left: 15px;
+    outline: none;
 }
 
 .BR {
@@ -60,11 +64,8 @@ form {
     border-color: #F2F2F2
 }
 
-.locationsection {
+.background-location {
     position: relative;
-}
-
-.backgroundlocation {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -72,11 +73,10 @@ form {
     border-bottom-left-radius: 15px 18px;
     background-color: #F2F2F2;
     width: 50px;
-    height: 50px;
+    height: 100%;
 }
 
-
-.boutonrecherche {
+.bouton-recherche {
     display: flex;
     justify-content: center;
     width: 150px;
