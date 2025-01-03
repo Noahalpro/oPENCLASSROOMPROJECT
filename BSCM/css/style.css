@@ -175,7 +175,7 @@ a {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
-    height: fit-content;
+    height: 190px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -203,7 +203,7 @@ a {
 /****** Hebergements And Populaires ***********/
 
 .card-title-h {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 5px;
     margin-bottom: 0px;
 }
@@ -222,13 +222,14 @@ a {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
+    margin-bottom: 40px;
     box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-    height: fit-content;
+    height: 650px;
 }
 .hebergements-marseille-title {
     display: flex;
@@ -237,9 +238,10 @@ a {
 }
 .hebergements-cards img {
     width: 100%;
-    height: 100px;
+    height: 110px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 
@@ -255,13 +257,12 @@ a {
 
 .colonne-1 {
     width: 100%;
-    padding-left: 15px;
+    padding-left: 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content:space-between;
-    box-sizing: border-box;
+    align-content: space-between;
 }
 /****** Populaires ***********/
 .populaires {
@@ -285,6 +286,7 @@ a {
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    object-fit: cover;
 }
 
 
@@ -312,7 +314,12 @@ a {
 
 /*****Activité à marseile *****/
 
-
+.card-title-A {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
 /* .actrow {
     width: 100%;
     height: fit-content;
@@ -330,7 +337,8 @@ a {
     padding-bottom: 1px;
     margin-top: 20px;
     margin-bottom: 20px;
-    width:250px;
+    margin-left: 20px;
+    width: 270px;
     height: fit-content;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
@@ -342,6 +350,7 @@ h4 {
     height: 320px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .act-card-content {
@@ -359,6 +368,30 @@ h4 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+/****** footer ***********/
+
+footer {
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 150px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    gap: 200px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.colonneF {
+    width: 100%;
+    height: 300px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;  
 }
 
 
@@ -403,5 +436,78 @@ h4 {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    .hebergements-and-populaires section {
+        width: 100%;
+    }
+
+    .main-container {
+        padding: 0px;
+    }
+
+    .logo-header {
+        padding: none;
+        }
+    .partiefiltre {
+        width:  100%;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .hebergements-and-populaires {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .populaires-cards img {
+        width: 50%;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
     /* ... */
+
+    footer {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        gap: 100px;
+        height: fit-content;
+        width: 100%;
+        margin-left: 0px;
+        padding: 0px;
+    }
 }
