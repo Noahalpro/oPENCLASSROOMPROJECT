@@ -126,7 +126,8 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 50px;
+    padding: none;
+    margin-left: -20px;
 }
 
 :root {
@@ -436,6 +437,29 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    li:hover::before {
+        width:170px;
+    }
+
+    li::before {
+        top: 30px;
+    }
+
+    li {
+        padding-left: 100px;
+    }
+
+
+    header {
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .logo-header {
+        padding-left: 50px;
+        width: 80px;
+    }
 
     .hebergements-and-populaires section {
         width: 100%;
