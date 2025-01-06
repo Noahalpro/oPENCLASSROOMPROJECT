@@ -100,13 +100,14 @@ header {
 li {
     position: relative; /* Nécessaire pour positionner la barre */
     display: inline-block; /* S'assurer que la barre s'applique correctement */
+    padding-left: 40px;
 }
 
 li::before {
     content: ""; /* Contenu vide pour la barre */
     position: absolute;
     top: -20px; /* Distance entre le texte et la barre */
-    left: 0;
+    left: 20px;
     width: 0; /* La barre est cachée par défaut */
     height: 2px; /* Épaisseur de la barre */
     background-color: rgb(4, 0, 255); /* Couleur de la barre */
@@ -127,7 +128,7 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     padding: none;
-    margin-left: -20px;
+    gap: 20px;
 }
 
 :root {
@@ -438,22 +439,34 @@ footer {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    nav {
+        width: 100%;
+    }
+
     li:hover::before {
-        width:170px;
+        width:200px;
     }
 
     li::before {
         top: 30px;
+        left: -50px;
     }
 
     li {
-        padding-left: 100px;
+        padding-left: 0px;
+    }
+
+    ul {
+        padding-left: 0px;
+        justify-content: center;
+        gap:120px;
     }
 
 
     header {
         flex-direction: column;
         align-items:center;
+        margin: 0px;
     }
 
     .logo-header {
@@ -523,6 +536,18 @@ footer {
         font-size: 13px;
     }
     /* ... */
+
+    .activites-marseille {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actcard {
+        width: 33 0px;
+    }
+    .actcard img {
+        height: 130px;
+    }
 
     footer {
         display: flex;
