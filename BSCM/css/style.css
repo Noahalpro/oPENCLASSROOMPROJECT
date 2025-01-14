@@ -92,42 +92,35 @@ form {
 
 header {
     display: flex;
+    height: fit-content;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
-li {
+nav ul li {
     position: relative; /* Nécessaire pour positionner la barre */
-    display: inline-block; /* S'assurer que la barre s'applique correctement */
-    padding-left: 40px;
+    display: flex;
+    border-top: 1px solid transparent;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-li::before {
-    content: ""; /* Contenu vide pour la barre */
-    position: absolute;
-    top: -20px; /* Distance entre le texte et la barre */
-    left: 20px;
-    width: 0; /* La barre est cachée par défaut */
-    height: 2px; /* Épaisseur de la barre */
-    background-color: rgb(4, 0, 255); /* Couleur de la barre */
-    transition: width 0.3s ease; /* Animation fluide */
-  }
-
-li:hover::before {
-    width: 100%; /* La barre s'étend sur toute la largeur */
-  }
-
-li:hover {
+nav ul li:hover {
     color: rgb(4, 0, 255);
+    border-top: 1px solid;
+
 }
 
-ul {
+nav ul {
+    width: fit-content;
     list-style-type: none; /* Supprime les puces */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: none;
+    /* padding: none; */
     gap: 20px;
 }
 
@@ -149,7 +142,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    /* padding: 0 50px; */
     box-sizing: border-box;
 }
 
@@ -438,7 +431,9 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-
+    main {
+        width: 100%;
+    }
     nav {
         width: 100%;
     }
@@ -453,13 +448,12 @@ footer {
     }
 
     li {
-        padding-left: 0px;
+        flex-grow: 1;
     }
 
     ul {
-        padding-left: 0px;
+        display: flex;
         justify-content: center;
-        gap:120px;
     }
 
 
@@ -479,16 +473,23 @@ footer {
     }
 
     .main-container {
-        padding: 0px;
+        /* padding: 0px; */
     }
 
     .logo-header {
-        padding: none;
+        /* padding: none; */
         }
     .partiefiltre {
         width:  100%;
-        flex-direction: column;
-        padding: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5px 50px 50px;
+        gap:20px;
+    }
+
+    .titrefiltre {
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
     .hebergements-and-populaires {
         width: 100%;
@@ -501,6 +502,10 @@ footer {
         height: fit-content;
         justify-content: center;
         align-items: center;
+    }
+
+    .Hcard {
+        width: 300px;
     }
 
     .populaires {
@@ -557,6 +562,6 @@ footer {
         height: fit-content;
         width: 100%;
         margin-left: 0px;
-        padding: 0px;
+        /* padding: 0px; */
     }
 }
