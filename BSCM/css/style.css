@@ -243,7 +243,8 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-    height: 650px;
+    height: fit-content;
+    margin-right: 40px;
 }
 .hebergements-marseille-title {
     display: flex;
