@@ -20,16 +20,22 @@
             <div><img src="./images/logo/Booki.png" alt="booki logo" class="logo-header"></div>
             <nav>
                 <ul>
-                    <li>Hebergements</li>
-                    <li>Activités</li>
+                    <li class="li-hebergement">Hebergements</li>
+                    <li class="li-activite">Activités</li>
                 </ul>
             </nav>
         </header>
         <main>
+            <div class="titre-head">
+                <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
             <form class="barre-recherche" action="" method="get">
                 <div class="background-location"><i class="fa-solid fa-location-dot"></i></div>
                 <input type="text" name="ville_recherche" id="ville_recherche" placeholder="Ville cible">
-                <div class="bouton-recherche"><span class="BR">Rechercher</span></div>
+                <div class="bouton-recherche"><span class="BR">Rechercher</span>
+                    <div class="iconeloupe"><i class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
 
             </form>
             <div class="partiefiltre">
@@ -38,6 +44,11 @@
                 <div class="Filtres 2"><i class="fa-solid fa-person"></i>Familial</div>
                 <div class="Filtres 3"><i class="fa-solid fa-heart"></i>romantique</div>
                 <div class="Filtres 4"><i class="fa-solid fa-fire"></i>Nos pépites</div>
+            </div>
+
+            <div class="texteinfo">
+                <i class="fa-solid fa-info"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
             
             <div class="hebergements-and-populaires">
@@ -106,11 +117,11 @@
                             </a>
                             <a href="#">
                                 <article class="Hcard">
-                                    <img src="./images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                    <img src="./images/hebergements/annie-spratt.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <div class="card-txt">
-                                            <h3 class="card-title-h">Hôtel les mouettes</h3>
-                                            <p class="card-subtitle-h">Nuit à partir de 76<span class="euro">€</span></p>
+                                            <h3 class="card-title-h">Hôtel de la mer</h3>
+                                            <p class="card-subtitle-h">Nuit à partir de 46<span class="euro">€</span></p>
                                         </div>
                                         <div class="card-rating">
                                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -125,11 +136,11 @@
                             </a>
                             <a href="#">
                                 <article class="Hcard">
-                                    <img src="./images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                    <img src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <div class="card-txt">
-                                            <h3 class="card-title-h">Hôtel les mouettes</h3>
-                                            <p class="card-subtitle-h">Nuit à partir de 76<span class="euro">€</span></p>
+                                            <h3 class="card-title-h">Auberge de la Canebière</h3>
+                                            <p class="card-subtitle-h">Nuit à partir de 25<span class="euro">€</span></p>
                                         </div>
                                         <div class="card-rating">
                                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -144,11 +155,11 @@
                             </a>
                             <a href="#">
                                 <article class="Hcard">
-                                    <img src="./images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                    <img src="./images/hebergements/nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <div class="card-txt">
-                                            <h3 class="card-title-h">Hôtel les mouettes</h3>
-                                            <p class="card-subtitle-h">Nuit à partir de 76<span class="euro">€</span></p>
+                                            <h3 class="card-title-h">Auberge Le Panier</h3>
+                                            <p class="card-subtitle-h">Nuit à partir de 23<span class="euro">€</span></p>
                                         </div>
                                         <div class="card-rating">
                                             <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -280,5 +291,4 @@
         </footer>
     </div>
 </body>
-
 </html>
