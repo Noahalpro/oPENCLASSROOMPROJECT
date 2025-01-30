@@ -5,7 +5,7 @@
 
 #crx-root {
     display: none !important;
-  }
+}
 
 .titre-head {
     margin-bottom: 40px;
@@ -720,7 +720,7 @@ footer {
         display: flex;
         justify-content: left;
         flex-direction: column;
-        gap: 40px;
+        gap: 5px;
         height: fit-content;
         width: 100%;
         padding: 0 ;
