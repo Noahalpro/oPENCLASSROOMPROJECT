@@ -75,7 +75,7 @@
 /* ----- BARRE RECHERCHE ----- */
 
 .fa-location-dot {
-    font-size: 20px;  /* Taille de l'icône */
+    font-size: 20px; 
     color: black !important;
 }
 
@@ -148,7 +148,7 @@ header {
 }
 
 nav ul li {
-    position: relative; /* Nécessaire pour positionner la barre */
+    position: relative;
     display: flex;
     border-top: 1px solid transparent;
     align-items: center;
@@ -173,12 +173,11 @@ nav ul li:hover {
 
 nav ul {
     width: fit-content;
-    list-style-type: none; /* Supprime les puces */
+    list-style-type: none; 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* padding: none; */
     gap: 20px;
     padding-inline-start: 0px;
     height: 100%;
@@ -205,7 +204,8 @@ nav {
 
 body {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 0px;
@@ -386,15 +386,6 @@ a {
     font-size: 18px;
     margin-left: 30px
 }
-/* .actrow {
-    width: 100%;
-    height: fit-content;
-    padding-left: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-} */
  
 
 .actcard {
