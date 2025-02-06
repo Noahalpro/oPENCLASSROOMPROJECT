@@ -435,7 +435,7 @@ footer {
     display: flex;
     justify-content: left;
     flex-direction: row;
-    gap: 200px;
+    gap: 350px;
     padding: 10px;
 }
 
@@ -478,18 +478,32 @@ footer {
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    body {
+        width: 100%;
+        margin-right: 20px;
+        margin-bottom: 0;
+        margin-left: 30px;
+
+    }
+
+    .hebergements-cards {
+        width: 100%;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
         gap: 0px;
+        width: 100%;
     }
 
     .hebergements {
         width: 100%;
+        margin-right: 0;
     }
 
     .colonne-1 {
-        justify-content: space-around;
-        column-gap: 0px;
+        justify-content:space-between;
+        column-gap: 10px;
     }
 
     .populaires {
@@ -518,7 +532,7 @@ footer {
     .partiefiltre {
         width:  fit-content;
         display: grid;
-        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-columns: 180px 180px 180px 180px;
         grid-template-rows: 30px 80px;
         margin-left: 20px;
         gap: 0;
@@ -526,9 +540,10 @@ footer {
     }
 
     .Filtres {
-        width: 150px;
-        height: 30px;
+        width: 110px;
+        height: 20px;
         align-items: center;
+        font-size:small;
 
     }
 
@@ -547,20 +562,34 @@ footer {
     }
 
     .Hcard {
-        width: 240px;
-        height: fit-content
+        width: 210px;
+        height: fit-content;
     }
 
     .actcard {
-        width: 180px;
+        width: 160px;
     }
     .actcard img {
-        height: 220px;
+        height: 180px;
+    }
+
+    .acth4 {
+        padding-right: 15px;
+        font-size: 13px;
     }
 
     footer {
-        width: fit-content;
+        width: 100%;
         height: fit-content;
+        column-gap: 100px;
+        padding: 20px;
+    }
+
+    footer .card-title-h {
+        font-size: 15px;
+    }
+    footer p {
+        font-size: 13px;
     }
 }
 
@@ -699,6 +728,7 @@ footer {
         width: 150px;
         height: 30px;
         align-items: center;
+        font-size: 18px;
 
     }
 
@@ -802,10 +832,19 @@ footer {
         display: flex;
         justify-content: left;
         flex-direction: column;
-        gap: 5px;
+        gap: 0px;
         height: fit-content;
         width: 100%;
         padding: 0 ;
+    }
+    footer .card-title-h {
+        font-size: 19px;
+        
+        padding-left: 20px;
+    }
+    footer p {
+        font-size: 16px;
+        padding-left: 20px;
     }
     .colonneF-1, .colonneF-2, .colonneF-3 {
         padding: 30px;
