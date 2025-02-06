@@ -279,7 +279,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content:space-between;
-    gap: 50px;
+    gap: 20px;
 }
 
 .hebergements-and-populaires section {
@@ -487,6 +487,11 @@ footer {
         width: 100%;
     }
 
+    .colonne-1 {
+        justify-content: space-around;
+        column-gap: 0px;
+    }
+
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -539,6 +544,11 @@ footer {
         gap: 25px;
         width: 100%;
         flex-wrap: nowrap;
+    }
+
+    .Hcard {
+        width: 240px;
+        height: fit-content
     }
 
     .actcard {
